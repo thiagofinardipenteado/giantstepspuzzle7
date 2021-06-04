@@ -27,7 +27,7 @@ while 0 == 0
             chair_to_drink = chair_to_drink + choose_direction;
             chair_to_drink = N * (chair_to_drink == 0) + ...
                              1 * (chair_to_drink == N+1) + ...
-                 hair_to_drink * (chair_to_drink ~= 0 && chair_to_drink ~= N+1);
+                 chair_to_drink * (chair_to_drink ~= 0 && chair_to_drink ~= N+1);
 
             t = t + 1;
         end
